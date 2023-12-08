@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.secondary-title {
+    font-size: 2rem;
+    font-weight: 550;
+    padding-top: 6%;
+}
+
+.projects__content p {
+    font-size: 20px;
+    font-weight: 550;
+    word-spacing: 4px;
+
+}
+
+.tertiary-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+    padding-right: 10%;
+}
+
+.tertiary-title span{
+    color: rgb(0, 195, 255);
+}
+
+.projects__reversed-list .image{
+    padding-right: 3%;
+}
+
+.projects__info p{
+    font-size: 20px;
+    font-weight: 550;
+    word-spacing: 5px;
+}
+
+.projects ul li .image img {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+}
+
+.projects {
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+    background-color: white;
+    height: 100%;
+    
+}
+
+
+.projects .projects__content {
+    max-width: 56rem;
+    text-align: center;
+    margin: 0 auto 6rem;
+}
+
+.projects ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding-left: 3%;
+}
+
+.projects ul li.projects__reversed-list {
+    flex-direction: row-reverse;
+}
+
+.projects ul li:not(:last-of-type) {
+    margin-bottom: 12rem;
+}
+
+.projects ul li .image img {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+    border: 4px solid #000000;
+}
+
+
+.projects ul li .projects__info {
+    max-width: 47rem;
+}
+
+.projects ul li .projects__info p {
+    margin: 1rem 0 4rem;
+}
+
+.projects ul li .projects__info a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1140px){
+        
+       /* Projetos*/
+       .projects ul li,
+       .projects ul li.projects__reversed-list {
+         flex-direction: column-reverse;
+       }
+     
+       .projects ul li .projects__info {
+         max-width: 66rem;
+       }
+     
+       .projects ul li .image img {
+         min-width: auto;
+       }
+
+       .projects__content p{
+            padding: 0% 1% 0% 1%;
+            font-size: 26px;
+       }
+
+       #projects{
+            padding: 0% 4% 0% 2%;
+       }
+
+       .projects__reversed-list .projects__info{
+            padding-left: 0%;
+       }
+
+       .projects__reversed-list .image{
+            padding-left: 0%;
+       }
+
+}
